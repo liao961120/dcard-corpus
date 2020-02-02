@@ -43,9 +43,9 @@ The post data were segmented and PoS tagged using [`ckiplab/ckiptagger`](https:/
 - number of tokens: {tk_num}
 
 
-## Concordance App
+## Concordancer
 
-The quickest way to query KWIC concordance in this corpus with [this concordance app](https://kwic.yongfu.name) is using [docker](https://www.docker.com).
+The quickest way to query KWIC concordance in this corpus with [this concordancer](https://kwic.yongfu.name) is using [docker](https://www.docker.com).
 
 
 Download image:

@@ -4,3 +4,6 @@ cache.tsv
 test.py
 data/dcard.sqlite
 data/dcard_lite.jsonl
+KWIC/
+main.py
+ori
