@@ -1,7 +1,6 @@
 #%%
 import json
-from pprint import pprint
-with open('dcard_2020-02.jsonl') as f:
+with open('data/dcard_2020-02.jsonl') as f:
     corp = [json.loads(l) for l in f]
 
 #%%
@@ -31,8 +30,9 @@ The post data were segmented and PoS tagged using [`ckiplab/ckiptagger`](https:/
 
 ## Files
 
-- `dcard_2020-02.jsonl`: The segmented and tagged corpus. Each line is a json string representing a post.
-- `rawdata.zip`: The raw data retrieved from <https://www.dcard.tw/_api/forums> and <https://www.dcard.tw/_api/posts>.
+- `data/dcard_2020-02.jsonl`: The segmented and tagged corpus. Each line is a json string representing a post.
+- `data/rawdata.zip`: The raw data retrieved from <https://www.dcard.tw/_api/forums> and <https://www.dcard.tw/_api/posts>.
+
 
 
 ## Corpus Stats
@@ -41,6 +41,27 @@ The post data were segmented and PoS tagged using [`ckiplab/ckiptagger`](https:/
     - female author: {female_text_count} ({round(100*female_text_count/text_num, 2)}%)
     - male author: {male_text_count}  ({round(100*male_text_count/text_num, 2)}%)
 - number of tokens: {tk_num}
+
+
+## Concordance App
+
+The quickest way to query KWIC concordance in this corpus with [this concordance app](https://kwic.yongfu.name) is [docker](https://www.docker.com).
+
+
+Download image:
+
+```bash
+#https://hub.docker.com/r/liao961120/asbc
+docker pull liao961120/dcard
+```
+
+Run server:
+
+```bash
+docker run -it -p 127.0.0.1:1420:80 liao961120/dcard
+```
+
+When you see `Corpus Loaded` printed on the command line, you can visit <https://kwic.yongfu.name/> to use the app.
 '''.strip()
 
 with open("README.md", "w") as f:

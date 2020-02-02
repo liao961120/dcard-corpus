@@ -1,0 +1,16 @@
+.git
+__pycache__
+source
+build
+docs
+test.py
+cache.tsv
+setup.py
+readme.py
+
+.travis.yml
+*Dockerfile*
+README.md
+LICENSE.txt
+data/rawdata.zip
+data/dcard_2020-02.jsonl

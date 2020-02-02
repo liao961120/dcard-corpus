@@ -1,0 +1,6 @@
+__pycache__
+build
+cache.tsv
+test.py
+data/dcard.sqlite
+data/dcard_lite.jsonl
