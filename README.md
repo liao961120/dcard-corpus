@@ -22,9 +22,9 @@ The post data were segmented and PoS tagged using [`ckiplab/ckiptagger`](https:/
 - number of tokens: 5284288
 
 
-## Concordance App
+## Concordancer
 
-The quickest way to query KWIC concordance in this corpus with [this concordance app](https://kwic.yongfu.name) is using [docker](https://www.docker.com).
+The quickest way to query KWIC concordance in this corpus with [this concordancer](https://kwic.yongfu.name) is using [docker](https://www.docker.com).
 
 
 Download image:
@@ -40,3 +40,5 @@ docker run -it -p 127.0.0.1:1420:80 liao961120/dcard
 ```
 
 When you see `Corpus Loaded` printed on the command line, you can visit <https://kwic.yongfu.name> to use the app.
+
+The source code of the concordancer is hosted in [`liao961120/kwic`](https://github.com/liao961120/kwic) and [`liao961120/kwic-backend`](https://github.com/liao961120/kwic-backend).
