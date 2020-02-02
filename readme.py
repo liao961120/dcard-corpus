@@ -45,13 +45,12 @@ The post data were segmented and PoS tagged using [`ckiplab/ckiptagger`](https:/
 
 ## Concordance App
 
-The quickest way to query KWIC concordance in this corpus with [this concordance app](https://kwic.yongfu.name) is [docker](https://www.docker.com).
+The quickest way to query KWIC concordance in this corpus with [this concordance app](https://kwic.yongfu.name) is using [docker](https://www.docker.com).
 
 
 Download image:
 
 ```bash
-#https://hub.docker.com/r/liao961120/asbc
 docker pull liao961120/dcard
 ```
 
@@ -61,7 +60,7 @@ Run server:
 docker run -it -p 127.0.0.1:1420:80 liao961120/dcard
 ```
 
-When you see `Corpus Loaded` printed on the command line, you can visit <https://kwic.yongfu.name/> to use the app.
+When you see `Corpus Loaded` printed on the command line, you can visit <https://kwic.yongfu.name> to use the app.
 '''.strip()
 
 with open("README.md", "w") as f:
