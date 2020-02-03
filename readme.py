@@ -1,4 +1,28 @@
 #%%
+import sqlite3
+import pandas as pd
+import numpy as np
+
+conn = sqlite3.connect('data/dcard.sqlite')
+c = conn.cursor()
+
+#%%
+r = c.execute("""
+    SELECT token.token, pos.pos, t1.num FROM
+        (SELECT token_id, pos_id, COUNT(*) AS num 
+            FROM oneGram GROUP BY token_id, pos_id
+                         ORDER BY 3 DESC) t1
+    LEFT JOIN token
+        ON t1.token_id=token.token_id
+    LEFT JOIN pos
+        ON t1.pos_id=pos.pos_id;
+    """)
+#token_type_count = [x for x in r]
+df = pd.DataFrame((x for x in r), columns=['token', 'pos', 'count'] )
+df.index = np.arange(1, len(df)+1)
+
+
+#%%
 import json
 with open('data/dcard_2020-02.jsonl') as f:
     corp = [json.loads(l) for l in f]
@@ -34,19 +58,9 @@ The post data were segmented and PoS tagged using [`ckiplab/ckiptagger`](https:/
 - `data/rawdata.zip`: The raw data retrieved from <https://www.dcard.tw/_api/forums> and <https://www.dcard.tw/_api/posts>.
 
 
-
-## Corpus Stats
-
-- number of posts: {text_num}
-    - female author: {female_text_count} ({round(100*female_text_count/text_num, 2)}%)
-    - male author: {male_text_count}  ({round(100*male_text_count/text_num, 2)}%)
-- number of tokens: {tk_num}
-
-
 ## Concordancer
 
 The quickest way to query KWIC concordance in this corpus with [this concordancer](https://kwic.yongfu.name) is using [docker](https://www.docker.com).
-
 
 Download image:
 
@@ -63,6 +77,19 @@ docker run -it -p 127.0.0.1:1420:80 liao961120/dcard
 When you see `Corpus Loaded` printed on the command line, you can visit <https://kwic.yongfu.name> to use the app.
 
 The source code of the concordancer is hosted in [`liao961120/kwic`](https://github.com/liao961120/kwic) and [`liao961120/kwic-backend`](https://github.com/liao961120/kwic-backend).
+
+
+## Corpus Stats
+
+- number of tokens: {tk_num}
+- number of posts: {text_num}
+    - female author: {female_text_count} ({round(100*female_text_count/text_num, 2)}%)
+    - male author: {male_text_count}  ({round(100*male_text_count/text_num, 2)}%)
+
+#### Word List (Top 100 frequent)
+
+{df.iloc[:100,:].to_html(justify='center')}
+
 '''.strip()
 
 with open("README.md", "w") as f:
