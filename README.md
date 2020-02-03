@@ -43,7 +43,7 @@ The source code of the concordancer is hosted in [`liao961120/kwic`](https://git
 
 #### Word List (Top 100 frequent)
 
-<table border="1" class="dataframe">
+<table  class="dataframe">
   <thead>
     <tr style="text-align: center;">
       <th></th>

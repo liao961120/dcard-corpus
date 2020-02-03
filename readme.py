@@ -88,7 +88,7 @@ The source code of the concordancer is hosted in [`liao961120/kwic`](https://git
 
 #### Word List (Top 100 frequent)
 
-{df.iloc[:100,:].to_html(justify='center')}
+{df.iloc[:100,:].to_html(justify='center').replace('border="1"', '')}
 
 '''.strip()
 
