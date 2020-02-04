@@ -3,13 +3,13 @@
 This repo hosts the post data retrieved from Dcard API,
 which were colleceted for the purpose of building a small corpus.
 These posts came from the top-100 popular forums of Dcard. 
-Each post is at least 100-character-long and is posted before or on 2020-01-29.
+Each post is at least 100-character-long.
 
 The post data were segmented and PoS tagged using [`ckiplab/ckiptagger`](https://github.com/ckiplab/ckiptagger).
 
 ## Files
 
-- `data/dcard_2020-02.jsonl`: The segmented and tagged corpus. Each line is a json string representing a post.
+- `data/dcard.jsonl`: The segmented and tagged corpus. Each line is a json string representing a post.
 - `data/rawdata.zip`: The raw data retrieved from <https://www.dcard.tw/_api/forums> and <https://www.dcard.tw/_api/posts>.
 
 
@@ -36,10 +36,10 @@ The source code of the concordancer is hosted in [`liao961120/kwic`](https://git
 
 ## Corpus Stats
 
-- number of tokens: 5121143
-- number of posts: 18540
-    - female author: 11573 (62.42%)
-    - male author: 6967  (37.58%)
+- Number of tokens: 5292615
+- Number of posts: 19224
+    - Female author: 12007 (62.46%)
+    - Male author: 7217  (37.54%)
 
 #### Word List (Top 100 frequent)
 
@@ -57,601 +57,601 @@ The source code of the concordancer is hosted in [`liao961120/kwic`](https://git
       <th>1</th>
       <td>的</td>
       <td>DE</td>
-      <td>212003</td>
+      <td>219170</td>
     </tr>
     <tr>
       <th>2</th>
       <td>，</td>
       <td>COMMACATEGORY</td>
-      <td>208538</td>
+      <td>214385</td>
     </tr>
     <tr>
       <th>3</th>
       <td>我</td>
       <td>Nh</td>
-      <td>108130</td>
+      <td>110994</td>
     </tr>
     <tr>
       <th>4</th>
       <td>是</td>
       <td>SHI</td>
-      <td>84915</td>
+      <td>87591</td>
     </tr>
     <tr>
       <th>5</th>
       <td>有</td>
       <td>V_2</td>
-      <td>55489</td>
+      <td>57263</td>
     </tr>
     <tr>
       <th>6</th>
       <td></td>
       <td>WHITESPACE</td>
-      <td>53020</td>
+      <td>54959</td>
     </tr>
     <tr>
       <th>7</th>
       <td>。</td>
       <td>PERIODCATEGORY</td>
-      <td>52423</td>
+      <td>53661</td>
     </tr>
     <tr>
       <th>8</th>
       <td>不</td>
       <td>D</td>
-      <td>48307</td>
+      <td>49773</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>一</td>
-      <td>Neu</td>
-      <td>45372</td>
+      <td>&lt;URL&gt;</td>
+      <td>FW</td>
+      <td>46867</td>
     </tr>
     <tr>
       <th>10</th>
-      <td>了</td>
-      <td>Di</td>
-      <td>43942</td>
+      <td>一</td>
+      <td>Neu</td>
+      <td>46811</td>
     </tr>
     <tr>
       <th>11</th>
-      <td>&lt;URL&gt;</td>
-      <td>FW</td>
-      <td>43699</td>
+      <td>了</td>
+      <td>Di</td>
+      <td>45339</td>
     </tr>
     <tr>
       <th>12</th>
       <td>.</td>
       <td>PERIODCATEGORY</td>
-      <td>42031</td>
+      <td>43362</td>
     </tr>
     <tr>
       <th>13</th>
       <td>在</td>
       <td>P</td>
-      <td>41266</td>
+      <td>42562</td>
     </tr>
     <tr>
       <th>14</th>
       <td>就</td>
       <td>D</td>
-      <td>39550</td>
+      <td>40836</td>
     </tr>
     <tr>
       <th>15</th>
       <td>個</td>
       <td>Nf</td>
-      <td>37770</td>
+      <td>38905</td>
     </tr>
     <tr>
       <th>16</th>
       <td>也</td>
       <td>D</td>
-      <td>35224</td>
+      <td>36364</td>
     </tr>
     <tr>
       <th>17</th>
-      <td>都</td>
-      <td>D</td>
-      <td>33670</td>
+      <td>這</td>
+      <td>Nep</td>
+      <td>34835</td>
     </tr>
     <tr>
       <th>18</th>
-      <td>這</td>
-      <td>Nep</td>
-      <td>33523</td>
+      <td>都</td>
+      <td>D</td>
+      <td>34730</td>
     </tr>
     <tr>
       <th>19</th>
       <td>很</td>
       <td>Dfa</td>
-      <td>30082</td>
+      <td>31142</td>
     </tr>
     <tr>
       <th>20</th>
       <td>、</td>
       <td>PAUSECATEGORY</td>
-      <td>27800</td>
+      <td>28877</td>
     </tr>
     <tr>
       <th>21</th>
       <td>會</td>
       <td>D</td>
-      <td>27265</td>
+      <td>28162</td>
     </tr>
     <tr>
       <th>22</th>
-      <td>他</td>
-      <td>Nh</td>
-      <td>25355</td>
+      <td>！</td>
+      <td>EXCLAMATIONCATEGORY</td>
+      <td>26118</td>
     </tr>
     <tr>
       <th>23</th>
-      <td>！</td>
-      <td>EXCLAMATIONCATEGORY</td>
-      <td>24960</td>
+      <td>他</td>
+      <td>Nh</td>
+      <td>25930</td>
     </tr>
     <tr>
       <th>24</th>
       <td>人</td>
       <td>Na</td>
-      <td>22915</td>
+      <td>23626</td>
     </tr>
     <tr>
       <th>25</th>
       <td>？</td>
       <td>QUESTIONCATEGORY</td>
-      <td>21904</td>
+      <td>22487</td>
     </tr>
     <tr>
       <th>26</th>
       <td>你</td>
       <td>Nh</td>
-      <td>21561</td>
+      <td>22130</td>
     </tr>
     <tr>
       <th>27</th>
-      <td>想</td>
-      <td>VE</td>
-      <td>20453</td>
+      <td>：</td>
+      <td>COLONCATEGORY</td>
+      <td>21278</td>
     </tr>
     <tr>
       <th>28</th>
-      <td>：</td>
-      <td>COLONCATEGORY</td>
-      <td>20407</td>
+      <td>想</td>
+      <td>VE</td>
+      <td>20998</td>
     </tr>
     <tr>
       <th>29</th>
       <td>但</td>
       <td>Cbb</td>
-      <td>20228</td>
+      <td>20839</td>
     </tr>
     <tr>
       <th>30</th>
       <td>要</td>
       <td>D</td>
-      <td>20116</td>
+      <td>20698</td>
     </tr>
     <tr>
       <th>31</th>
       <td>說</td>
       <td>VE</td>
-      <td>19041</td>
+      <td>19552</td>
     </tr>
     <tr>
       <th>32</th>
-      <td>」</td>
-      <td>PARENTHESISCATEGORY</td>
-      <td>17507</td>
+      <td>了</td>
+      <td>T</td>
+      <td>17949</td>
     </tr>
     <tr>
       <th>33</th>
-      <td>了</td>
-      <td>T</td>
-      <td>17465</td>
+      <td>（</td>
+      <td>PARENTHESISCATEGORY</td>
+      <td>17945</td>
     </tr>
     <tr>
       <th>34</th>
-      <td>「</td>
+      <td>」</td>
       <td>PARENTHESISCATEGORY</td>
-      <td>17332</td>
+      <td>17902</td>
     </tr>
     <tr>
       <th>35</th>
-      <td>（</td>
+      <td>「</td>
       <td>PARENTHESISCATEGORY</td>
-      <td>17148</td>
+      <td>17717</td>
     </tr>
     <tr>
       <th>36</th>
       <td>還</td>
       <td>D</td>
-      <td>16599</td>
+      <td>17090</td>
     </tr>
     <tr>
       <th>37</th>
       <td>自己</td>
       <td>Nh</td>
-      <td>16390</td>
+      <td>16816</td>
     </tr>
     <tr>
       <th>38</th>
       <td>可以</td>
       <td>D</td>
-      <td>16242</td>
+      <td>16785</td>
     </tr>
     <tr>
       <th>39</th>
       <td>(</td>
       <td>PARENTHESISCATEGORY</td>
-      <td>16126</td>
+      <td>16666</td>
     </tr>
     <tr>
       <th>40</th>
       <td>—</td>
       <td>DASHCATEGORY</td>
-      <td>15968</td>
+      <td>16400</td>
     </tr>
     <tr>
       <th>41</th>
       <td>）</td>
       <td>PARENTHESISCATEGORY</td>
-      <td>15295</td>
+      <td>16037</td>
     </tr>
     <tr>
       <th>42</th>
       <td>)</td>
       <td>PARENTHESISCATEGORY</td>
-      <td>14924</td>
+      <td>15383</td>
     </tr>
     <tr>
       <th>43</th>
       <td>跟</td>
       <td>P</td>
-      <td>14416</td>
+      <td>14860</td>
     </tr>
     <tr>
       <th>44</th>
       <td>著</td>
       <td>Di</td>
-      <td>14013</td>
+      <td>14313</td>
     </tr>
     <tr>
       <th>45</th>
       <td>她</td>
       <td>Nh</td>
-      <td>13704</td>
+      <td>14053</td>
     </tr>
     <tr>
       <th>46</th>
       <td>因為</td>
       <td>Cbb</td>
-      <td>13100</td>
+      <td>13466</td>
     </tr>
     <tr>
       <th>47</th>
       <td>次</td>
       <td>Nf</td>
-      <td>13039</td>
+      <td>13462</td>
     </tr>
     <tr>
       <th>48</th>
       <td>大家</td>
       <td>Nh</td>
-      <td>12780</td>
+      <td>13311</td>
     </tr>
     <tr>
       <th>49</th>
       <td>好</td>
       <td>VH</td>
-      <td>12766</td>
+      <td>13173</td>
     </tr>
     <tr>
       <th>50</th>
-      <td>看</td>
-      <td>VC</td>
-      <td>12248</td>
+      <td>真的</td>
+      <td>D</td>
+      <td>12655</td>
     </tr>
     <tr>
       <th>51</th>
-      <td>真的</td>
-      <td>D</td>
-      <td>12200</td>
+      <td>看</td>
+      <td>VC</td>
+      <td>12612</td>
     </tr>
     <tr>
       <th>52</th>
       <td>的</td>
       <td>T</td>
-      <td>12001</td>
+      <td>12334</td>
     </tr>
     <tr>
       <th>53</th>
       <td>那</td>
       <td>Nep</td>
-      <td>11213</td>
+      <td>11579</td>
     </tr>
     <tr>
       <th>54</th>
       <td>上</td>
       <td>Ncd</td>
-      <td>11110</td>
+      <td>11502</td>
     </tr>
     <tr>
       <th>55</th>
       <td>知道</td>
       <td>VK</td>
-      <td>10801</td>
+      <td>11115</td>
     </tr>
     <tr>
       <th>56</th>
-      <td>所以</td>
-      <td>Cbb</td>
-      <td>10700</td>
+      <td>覺得</td>
+      <td>VK</td>
+      <td>11043</td>
     </tr>
     <tr>
       <th>57</th>
-      <td>覺得</td>
-      <td>VK</td>
-      <td>10650</td>
+      <td>所以</td>
+      <td>Cbb</td>
+      <td>11017</td>
     </tr>
     <tr>
       <th>58</th>
       <td>被</td>
       <td>P</td>
-      <td>10604</td>
+      <td>10927</td>
     </tr>
     <tr>
       <th>59</th>
       <td>我們</td>
       <td>Nh</td>
-      <td>10392</td>
+      <td>10806</td>
     </tr>
     <tr>
       <th>60</th>
       <td>嗎</td>
       <td>T</td>
-      <td>10238</td>
+      <td>10511</td>
     </tr>
     <tr>
       <th>61</th>
       <td>讓</td>
       <td>VL</td>
-      <td>10091</td>
+      <td>10505</td>
     </tr>
     <tr>
       <th>62</th>
       <td>能</td>
       <td>D</td>
-      <td>9999</td>
+      <td>10353</td>
     </tr>
     <tr>
       <th>63</th>
       <td>沒</td>
       <td>D</td>
-      <td>9474</td>
+      <td>9750</td>
     </tr>
     <tr>
       <th>64</th>
       <td>什麼</td>
       <td>Nep</td>
-      <td>9212</td>
+      <td>9458</td>
     </tr>
     <tr>
       <th>65</th>
       <td>後</td>
       <td>Ng</td>
-      <td>8738</td>
+      <td>9090</td>
     </tr>
     <tr>
       <th>66</th>
       <td>再</td>
       <td>D</td>
-      <td>8557</td>
+      <td>8849</td>
     </tr>
     <tr>
       <th>67</th>
       <td>又</td>
       <td>D</td>
-      <td>8296</td>
+      <td>8535</td>
     </tr>
     <tr>
       <th>68</th>
-      <td>過</td>
-      <td>Di</td>
-      <td>8168</td>
+      <td>兩</td>
+      <td>Neu</td>
+      <td>8447</td>
     </tr>
     <tr>
       <th>69</th>
-      <td>兩</td>
-      <td>Neu</td>
-      <td>8156</td>
+      <td>過</td>
+      <td>Di</td>
+      <td>8369</td>
     </tr>
     <tr>
       <th>70</th>
       <td>天</td>
       <td>Nf</td>
-      <td>7918</td>
+      <td>8249</td>
     </tr>
     <tr>
       <th>71</th>
       <td>只</td>
       <td>Da</td>
-      <td>7870</td>
+      <td>8117</td>
     </tr>
     <tr>
       <th>72</th>
       <td>來</td>
       <td>D</td>
-      <td>7777</td>
+      <td>8076</td>
     </tr>
     <tr>
       <th>73</th>
       <td>才</td>
       <td>Da</td>
-      <td>7756</td>
+      <td>8011</td>
     </tr>
     <tr>
       <th>74</th>
       <td>喜歡</td>
       <td>VK</td>
-      <td>7689</td>
+      <td>8001</td>
     </tr>
     <tr>
       <th>75</th>
       <td>去</td>
       <td>D</td>
-      <td>7660</td>
+      <td>7873</td>
     </tr>
     <tr>
       <th>76</th>
       <td>種</td>
       <td>Nf</td>
-      <td>7604</td>
+      <td>7870</td>
     </tr>
     <tr>
       <th>77</th>
       <td>還是</td>
       <td>D</td>
-      <td>7602</td>
+      <td>7831</td>
     </tr>
     <tr>
       <th>78</th>
       <td>太</td>
       <td>Dfa</td>
-      <td>7395</td>
+      <td>7646</td>
     </tr>
     <tr>
       <th>79</th>
       <td>做</td>
       <td>VC</td>
-      <td>7365</td>
+      <td>7582</td>
     </tr>
     <tr>
       <th>80</th>
       <td>每</td>
       <td>Nes</td>
-      <td>7264</td>
+      <td>7542</td>
     </tr>
     <tr>
       <th>81</th>
-      <td>…</td>
-      <td>ETCCATEGORY</td>
-      <td>7234</td>
+      <td>時候</td>
+      <td>Na</td>
+      <td>7460</td>
     </tr>
     <tr>
       <th>82</th>
-      <td>時候</td>
-      <td>Na</td>
-      <td>7216</td>
+      <td>…</td>
+      <td>ETCCATEGORY</td>
+      <td>7374</td>
     </tr>
     <tr>
       <th>83</th>
-      <td>到</td>
-      <td>P</td>
-      <td>7055</td>
+      <td>買</td>
+      <td>VC</td>
+      <td>7307</td>
     </tr>
     <tr>
       <th>84</th>
-      <td>如果</td>
-      <td>Cbb</td>
-      <td>7024</td>
+      <td>到</td>
+      <td>P</td>
+      <td>7278</td>
     </tr>
     <tr>
       <th>85</th>
-      <td>買</td>
-      <td>VC</td>
-      <td>7021</td>
+      <td>如果</td>
+      <td>Cbb</td>
+      <td>7265</td>
     </tr>
     <tr>
       <th>86</th>
       <td>對</td>
       <td>P</td>
-      <td>6798</td>
+      <td>7013</td>
     </tr>
     <tr>
       <th>87</th>
       <td>這樣</td>
       <td>VH</td>
-      <td>6728</td>
+      <td>6938</td>
     </tr>
     <tr>
       <th>88</th>
-      <td>把</td>
-      <td>P</td>
-      <td>6721</td>
+      <td>大</td>
+      <td>VH</td>
+      <td>6930</td>
     </tr>
     <tr>
       <th>89</th>
-      <td>大</td>
-      <td>VH</td>
-      <td>6720</td>
+      <td>把</td>
+      <td>P</td>
+      <td>6923</td>
     </tr>
     <tr>
       <th>90</th>
-      <td>沒有</td>
-      <td>VJ</td>
-      <td>6641</td>
+      <td>看到</td>
+      <td>VE</td>
+      <td>6879</td>
     </tr>
     <tr>
       <th>91</th>
-      <td>看到</td>
-      <td>VE</td>
-      <td>6609</td>
+      <td>沒有</td>
+      <td>VJ</td>
+      <td>6842</td>
     </tr>
     <tr>
       <th>92</th>
       <td>啊</td>
       <td>T</td>
-      <td>6360</td>
+      <td>6571</td>
     </tr>
     <tr>
       <th>93</th>
       <td>最</td>
       <td>Dfa</td>
-      <td>6319</td>
+      <td>6539</td>
     </tr>
     <tr>
       <th>94</th>
       <td>時間</td>
       <td>Na</td>
-      <td>6293</td>
+      <td>6467</td>
     </tr>
     <tr>
       <th>95</th>
       <td>用</td>
       <td>P</td>
-      <td>6263</td>
+      <td>6467</td>
     </tr>
     <tr>
       <th>96</th>
-      <td>比較</td>
-      <td>Dfa</td>
-      <td>6204</td>
+      <td>小</td>
+      <td>VH</td>
+      <td>6439</td>
     </tr>
     <tr>
       <th>97</th>
-      <td>小</td>
-      <td>VH</td>
-      <td>6176</td>
+      <td>比較</td>
+      <td>Dfa</td>
+      <td>6409</td>
     </tr>
     <tr>
       <th>98</th>
       <td>一下</td>
       <td>Nd</td>
-      <td>6170</td>
+      <td>6376</td>
     </tr>
     <tr>
       <th>99</th>
       <td>然後</td>
       <td>D</td>
-      <td>6133</td>
+      <td>6307</td>
     </tr>
     <tr>
       <th>100</th>
       <td>和</td>
       <td>Caa</td>
-      <td>6058</td>
+      <td>6291</td>
     </tr>
   </tbody>
 </table>
