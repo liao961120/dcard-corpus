@@ -31,7 +31,7 @@ docker run -it -p 127.0.0.1:1420:80 liao961120/dcard
 
 When you see `Corpus Loaded` printed on the command line, you can visit <https://kwic.yongfu.name> to use the app.
 
-The source code of the concordancer is hosted in [`liao961120/kwic`](https://github.com/liao961120/kwic) and [`liao961120/kwic-backend`](https://github.com/liao961120/kwic-backend).
+The source code of the concordancer is hosted in [`liao961120/kwic`](https://github.com/liao961120/kwic) and [`liao961120/kwic-backend`](https://github.com/liao961120/kwic-backend). Read more about the concordancer in [this post](https://yongfu.name/2020/03/20/building-concordancer.html).
 
 
 ## Corpus Stats
